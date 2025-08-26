@@ -1,0 +1,130 @@
+@font-face {
+    font-family:"Lemon-Regular";
+    src: url("font/Lemon-Regular.ttf");
+}
+@font-face {
+    font-family:"OpenSans-Bold";
+    src: url("font/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family:"OpenSans-SemiBold";
+    src: url("font/OpenSans-SemiBold.ttf");
+}
+@font-face {
+    font-family:"OpenSans-Regular";
+    src: url("font/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Futura";
+    src: url("font/FuturaLTProBook.otf");
+}
+
+*{
+    margin: 0;  /* Resets margin for all elements */
+    padding: 0; /* Resets padding for all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+header {
+    width: 100%; /* Makes the header take the full width of the page */
+    position: fixed; /* Allows positioning of child elements */
+    top: 0; /* Positions the header at the top of the page */
+    left: 0; /* Positions the header at the left edge of the page */
+    display: flex;
+    justify-content: space-between; /* Centers the header content horizontally */
+    align-items: center; /* Centers the header content vertically */
+    padding: 25px 100px; /* Space inside the header */
+    background-color: rgba(255, 255, 255, 0); /* Sets a semi-transparent white background for the header */
+    
+}
+.logo {
+    width: 100px;   /* Sets the width of the logo */
+    height: auto;   /* Maintains the aspect ratio of the logo */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the logo */
+    display: flex; /* Allows flexbox layout for child elements */
+    align-items: center; /* Centers child elements vertically */
+    justify-content: center; /* Centers child elements horizontally */
+    gap: 20px; /* Adds space between the logo image and text */
+}
+
+.logo ul {
+    list-style: none; /* Removes bullet points from the list */
+    display: list-item; /* Displays the list items in a row */
+    gap: 10px; /* Adds space between the list items */
+}
+.logo ul li {
+    font-family: "Futura"; /* Sets the font for the logo text */
+    font-size: 18px; /* Sets the font size for the logo text */
+    font-weight: 400; /* Sets the font weight for the logo text */
+    color: black; /* Sets the color of the logo text */
+}
+.active {
+    color: darkred; /* Changes the color of the active navigation item */
+}
+
+#nav-list {
+    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Displays the list items in a row */
+    gap: 20px; /* Adds space between the list items */
+    
+}
+#nav-list li {
+    font-family: "Futura"; /* Sets the font for the navigation items */
+    font-size: 18px; /* Sets the font size for the navigation items */
+    font-weight: 600; /* Sets the font weight for the navigation items */
+    list-style: none; /* Ensures no bullet points are displayed */
+    margin-left: 100px; /* Adds space to the left of each navigation item */
+    text-transform: capitalize; /* Capitalizes the first letter of each word in the navigation items */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over navigation items */
+}
+
+.hero {
+    width: 100%; /* Sets the width of the hero section to fill the viewport */
+    height: 100vh; /* Sets the height of the hero section to fill the viewport height */
+    display: flex; /* Allows flexbox layout for child elements */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+    background-color: #f0f0f0; /* Sets a light gray background color for the hero section */
+}
+.hero-right {
+    width: 50%; /* Sets the width of the right side of the hero section */
+    height: 100%; /* Sets the height to fill the hero section */
+    display: flex; /* Allows flexbox layout for child elements */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+    flex-direction: column; /* Arranges child elements in a column */
+    background-image: url("img/hero-bg-left.jpg"); /* Sets the background image for the right side of the hero section */
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    
+}
+.hero-right img {
+    width: 100%; /* Sets the width of the image to fill its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 10px; /* Rounds the corners of the image */
+}
+.hero-left {
+    width: 50%; /* Sets the width of the left side of the hero section */
+    height: 100%; /* Sets the height to fill the hero section */
+    display: flex; /* Allows flexbox layout for child elements */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+    flex-direction: column; /* Arranges child elements in a column */
+    background-image: url("img/hero-bg-right.jpg"); /* Sets the background image for the left side of the hero section */
+    background-size: cover; /* Ensures the background image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    
+}
+.hero-left img {
+    width: 100%; /* Sets the width of the image to fill its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 10px; /* Rounds the corners of the image */
+}
+.hero-content h1{
+    font-family:"Futura"; /* Sets the font for the main heading in the hero section */
+    font-weight: 400; /* Sets the font weight for the main heading */
+    font-size: 64px; /* Sets the font size for the main heading */
+    width: 400px; /* Sets the width of the main heading */
+    text-transform: capitalize;     /* Capitalizes the first letter of each word in the main heading */
+}
